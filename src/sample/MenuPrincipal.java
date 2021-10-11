@@ -32,9 +32,6 @@ public class MenuPrincipal {
         return quitter;
     }
 
-    public Stage getPremierStage() {
-        return premierStage;
-    }
 
     public Label getTitre() {
         titre.setScaleY(4);

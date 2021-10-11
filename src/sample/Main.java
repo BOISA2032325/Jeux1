@@ -5,7 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.InputStream;
 
 public class Main extends Application {
 
@@ -19,6 +24,7 @@ public class Main extends Application {
         primaryStage.setHeight(500);
         MenuPrincipal menuPrincipal = new MenuPrincipal();
 
+
         do {
 
             //Menu Principal
@@ -27,6 +33,7 @@ public class Main extends Application {
             menuPrincipal.premierStage = primaryStage;
             primaryStage.setScene(new Scene(menu));
             primaryStage.show();
+
 
         }while (menuPrincipal.quitter.equals(true));
 
